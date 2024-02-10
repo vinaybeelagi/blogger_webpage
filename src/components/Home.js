@@ -1,5 +1,7 @@
 // Home.js
+
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
@@ -15,7 +17,8 @@ const Home = () => {
         <h1>Your Blog Name</h1>
         <nav>
           <ul>
-            <li><button onClick={() => console.log("Register clicked")}>Register</button></li>
+            <li><Link to="/register">Register</Link></li>
+            {/* Add other navigation buttons here */}
             <li><button onClick={() => console.log("Login clicked")}>Login</button></li>
           </ul>
         </nav>
